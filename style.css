@@ -1,0 +1,104 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #e8e0d5;
+    margin: 0;
+    padding: 15px;
+}
+
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+    background-color: #fffef8;
+    padding: 20px 25px;
+    border: 3px solid #8b7355;
+    border-radius: 3px;
+}
+
+h1 {
+    color: #5d4e37;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 24px;
+    border-bottom: 2px solid #8b7355;
+    padding-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+#current-face {
+    font-weight: bold;
+    color: #8b0000;
+}
+
+#cube-face {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+    gap: 4px;
+    margin: 20px auto;
+    width: fit-content;
+    background-color: #2b2b2b;
+    padding: 6px;
+    border: 2px solid #1a1a1a;
+}
+
+/* Les pièces du cube avec une bordure noire épaisse comme les rubiks cube*/
+canvas {
+    border: 2px solid #000000;
+}
+
+.section-titre {
+    text-align: center;
+    font-size: 13px;
+    color: #666666;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-style: italic;
+}
+
+/* On met les boutons les uns a coté des autres
+   et on les centre sur la page */
+.boutons-vue,
+.boutons-mouvements,
+.boutons-actions {
+    text-align: center;
+    margin: 10px 0;
+}
+
+
+button {
+    background-color: #d4d0c8;
+    color: #000000;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    padding: 6px 12px;
+    margin: 3px;
+    cursor: pointer;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+}
+
+/* Quand on clique sur le bouton
+   on inverse les bordures pour l'effet "enfoncé" */
+button:active {
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 10px;
+    border-top: 1px solid #cccccc;
+    font-size: 11px;
+    color: #888888;
+}
