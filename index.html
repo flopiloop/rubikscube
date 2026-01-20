@@ -1,65 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8"><title>Rubik's Cube</title>
+    <meta charset="utf-8"><title>Entrainement Rubik's Cube</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Rubik's Cube</h1>
+        <h1>Entrainement Rubik's Cube</h1>
         
-        <p>Face actuelle : <span id="current-face">AVANT</span></p>
-
+        <p>Maîtrisez le Rubik's Cube avec la méthode Fridrich<br>ou testez vos compétences en résolution.</p>
+        
+        <p class="section-titre">Menu Principal</p>
+        
         <div class="boutons-actions">
-            <button onclick="window.location.href='accueil.html'">Retour à l'accueil</button>
+            <button onclick="window.location.href='simulator.html'">Résoudre</button>
+            <button onclick="window.location.href='apprendre.html'">Apprendre</button>
         </div>
-
-        <!-- La grille du cube -->
-        <div id="cube-face">
-            <canvas id="piece0" width="50" height="50"></canvas>
-            <canvas id="piece1" width="50" height="50"></canvas>
-            <canvas id="piece2" width="50" height="50"></canvas>
-            <canvas id="piece3" width="50" height="50"></canvas>
-            <canvas id="piece4" width="50" height="50"></canvas>
-            <canvas id="piece5" width="50" height="50"></canvas>
-            <canvas id="piece6" width="50" height="50"></canvas>
-            <canvas id="piece7" width="50" height="50"></canvas>
-            <canvas id="piece8" width="50" height="50"></canvas>
-        </div>
-
-        <!-- Boutons pour tourner la vue -->
-        <p class="section-titre">Changer la vue</p>
-        <div class="boutons-vue">
-            <button onclick="changevue('gauche')">Gauche</button>
-            <button onclick="changevue('droite')">Droite</button>
-            <button onclick="changevue('haut')">Haut</button>
-            <button onclick="changevue('bas')">Bas</button>
-        </div>
-
-        <!-- Boutons des mouvements -->
-        <p class="section-titre">Mouvements</p>
-        <div class="boutons-mouvements">
-            <button onclick="mouvement('F')">F</button>
-            <button onclick="mouvement('R')">R</button>
-            <button onclick="mouvement('U')">U</button>
-            <button onclick="mouvement('L')">L</button>
-            <button onclick="mouvement('D')">D</button>
-            <button onclick="mouvement('B')">B</button>
-        </div>
-
-        <!-- Boutons mélanger et redémarrer -->
-        <p class="section-titre">Actions</p>
-        <div class="boutons-actions">
-            <button onclick="melange(15)">Melanger</button>
-            <button onclick="reinitialiser()">Redemarrer</button>
-        </div>
-
-        <!-- Pied de page -->
+        
         <div class="footer">
             Projet Rubik's Cube - Jonathan WILD
         </div>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
